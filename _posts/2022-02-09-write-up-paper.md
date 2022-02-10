@@ -50,15 +50,66 @@ root@machine:~$ nikto -h 10.10.11.143
 + OSVDB-877: HTTP TRACE method is active, suggesting the host is vulnerable to XST
 ...
 ```
-Nice. We found a `x-backend-server` called `office-paper`. Add it to your `/etc/hosts` and see what we got.
-A new `Wordpress` Site appears. Version `5.2.3`. Not UpToDate.
+Nice. We found a `x-backend-server` called `office-paper`. Add it to your "/etc/hosts" and see what we got.  
+A new `Wordpress` site appears. Version `5.2.3`. Seems to be not Up-To-Date.  
+
 There is a interesting comment:
 
-![image](\assets\img\posts\paper_comment.PNG)
-
+<div class="text-center">
+    <img src="\assets\img\posts\paper_comment.PNG" class="rounded img-fluid">
+</div>
+<br/>  
+  
 Lets try to look if there is a vulnerability about that...
 
-[wpscan.com 5.2.3](https://wpscan.com/vulnerability/3413b879-785f-4c9f-aa8a-5a4a1d5e0ba2)
+This sounds good: [wpscan.com 5.2.3](https://wpscan.com/vulnerability/3413b879-785f-4c9f-aa8a-5a4a1d5e0ba2)
 
-![imag](assets\img\posts\vuln.PNG)
+![image](\assets\img\posts\vuln.PNG){:class="img-fluid"}
 
+According to this we can find a nice looking secret register link. `http://chat.office.paper/register/*************`
+Before you can follow the link add `chat.office.paper` to your host file.
+
+Register an account and login. We see there is a bot, which accepts commands. We could try to leverage these.
+`list` and `file` commands seem to be qual to `ls` and `cat`
+
+With an simple added upgoing command `../` we can see the upper directory. So we can look arround for any secrets.
+Inside the `/hubot/.env` file are the bots creds.
+
+<div class="text-center">
+    <img src="\assets\img\posts\paper_bot.PNG" class="rounded img-fluid">   
+</div>
+<br/>
+
+---
+
+## Foothold
+
+With the Creds from recyclops and the username of the /home directory
+
+```console
+root@machine:~$ ssh dwight@10.10.11.143
+The authenticity of host '10.10.11.143 (10.10.11.143)' can't be established.
+ECDSA key fingerprint is SHA256:2eiFA8VFQOZukubwDkd24z/kfLkdKlz4wkAa/lRN3Lg.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.10.11.143' (ECDSA) to the list of known hosts.
+dwight@10.10.11.143's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Last login: Thu Feb 10 03:56:07 2022 from 10.10.14.3
+[dwight@paper ~]$ 
+```
+Boom. Shell!
+
+---
+
+## Prev Escalation
+
+Discovery with linpeas.sh?
+
+[CVE-2021-3560](https://github.blog/2021-06-10-privilege-escalation-polkit-root-on-linux-with-bug/)
+
+So there is already a complete Exploit on Exploit-db  
+
+[PythonExploit](https://www.exploit-db.com/exploits/50011)
+
+Upload the script. Run it. Boom Root Shell.
