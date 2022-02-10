@@ -1,7 +1,7 @@
 ---
 name: utnelson
 username: utnelson
-bio: "Full Stack Web Developer, based in Bangalore, India"
+bio: "same"
 site: https://sujaykundu.com
 avatar: xplor4r.png
 email: mail@sujaykundu.com
