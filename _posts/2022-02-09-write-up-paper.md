@@ -5,7 +5,7 @@ summary: Write-Up to the HackTheBox Machine Paper
 author: utnelson
 date: '2022-02-09 10:35:23 +0530'
 category: ['htb','write-up', 'easy']
-thumbnail: /assets/img/posts/paper.png
+thumbnail: \assets\img\posts\paper.PNG
 keywords: paper, htb, box, easy, write-up, walkthrough, polkit
 permalink: /blog/write-up-paper/
 ---
