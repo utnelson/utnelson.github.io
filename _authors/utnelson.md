@@ -1,5 +1,5 @@
 ---
-name: Nils Grothmann
+name: Nils
 username: utnelson
 bio: "Look at /About for mor infos from myself."
 site: https://sujaykundu.com
