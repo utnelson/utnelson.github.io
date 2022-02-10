@@ -1,7 +1,7 @@
 ---
-title: Styleguide
+title: Cheatsheet
 layout: page
-permalink: /styleguide/
+permalink: /cheatsheet/
 ---
 
 
