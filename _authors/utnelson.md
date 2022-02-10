@@ -1,9 +1,9 @@
 ---
 name: Nils Grothmann
 username: utnelson
-bio: "same"
+bio: "Look at /About for mor infos from myself."
 site: https://sujaykundu.com
-avatar: xplor4r.png
+avatar: avatar.png
 email: ut.kantwood@gmail.com
 social:
     - title: "github"

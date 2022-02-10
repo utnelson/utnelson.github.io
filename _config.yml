@@ -14,8 +14,8 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: Gallery
-      url: /gallery
+#    - text: Gallery
+#      url: /gallery
 #    - text: Shop
 #      url : /shop
 #    - text: Contact
@@ -24,10 +24,10 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: avatar.png
 author: utnelson
 author_bio: Hi my name is utnelson and i'm a beginner in ethical hacking and have fun with CTF's.
-author_email: "alkiman@gmx.de"
+author_email: "ut.kantwood@gmail.com"
 author_location: Germany
 author_website_url: "https://utnelson.github.io"
 typewrite-text: Feel free to share my stuff and enjoy the content.
@@ -35,27 +35,27 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
-            - company_name: Udem
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: false
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
+            - company_name: Udemy
+              company_logo: udemy.svg
+              company_url: https://udemy.com
+              designation: Python 100 Days of Code
+              description: Learned the basics of python coding
+              visibility: true
+            - company_name: TryHackMe
+              company_logo: udemy.svg
+              company_url: 
               designation: Azure Developer
               description: Worked on various Azure Cloud Products
               visibility: false
 
 # Education
 author_education_details:
-              - college_logo: udemy.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
-                visibility: false
+              - college_logo: bszet.jpg
+                college_name: BSZ Elektrotechnik
+                college_url: https://www.bszet.de/
+                college_degree: state certified engineer
+                description: state certified engineer mechatronics
+                visibility: true
 
 # Projects
 author_project_details:
@@ -88,7 +88,7 @@ instagram_username: kantwood
 hyvor_talk_website_id: 476
 
 # wakatime username (coding activity)
-wakatime_username: sujaykundu777
+# wakatime_username: sujaykundu777
 
 # mailchimp embedded form url (newsletter):
 mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
@@ -107,9 +107,9 @@ highlighter: rouge
 permalink: pretty
 
 # Choose what to show ( can be true or false)
-show_author_work_experiences: false
+show_author_work_experiences: true
 show_author_education_details: true
-show_author_project_details: true
+show_author_project_details: false
 
 # pagination of posts
 paginate: 4

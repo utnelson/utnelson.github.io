@@ -157,9 +157,13 @@ drwx------ 2 skyfuck skyfuck   4096 Feb 10 04:19 .gnupg
 
 in the home dir are two interesting looking file `tryhackme.asc` and `credential.pgp`. Download the to your local machine.  
 
-Run `gpg2john` for getting the hash.
+Run `gpg2john` for getting the hash. And crack the passphrase with the wordlist `rockyou.txt`
 
 ```console
+root@machine:~$ gpg2john tryhackme.asc > hash
+
+File tryhackme.asc
+
 root@machine:~$ john --wordlist=/usr/share/wordlists/rockyou.txt hash 
 Using default input encoding: UTF-8
 Loaded 1 password hash (gpg, OpenPGP / GnuPG Secret Key [32/64])
@@ -192,7 +196,7 @@ gpg: encrypted with 1024-bit ELG key, ID 61E104A66184FBCC, created 2020-03-11
       "tryhackme <stuxnet@tryhackme.com>"
 
 root@machine:~$ cat plaintext.txt 
-merlin:asuyusdoiuqoilkda312j31k2j123j1g23g12k3g12kj3gk12jg3k12j3kj123j    
+merlin:{secret password}    
 ```
 Nice new Creds for the user `merlin`  
 Let's change to him.
