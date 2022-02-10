@@ -103,7 +103,7 @@ Result:
   <display-name>Welcome to Tomcat</display-name>
   <description>
      Welcome to GhostCat
-	skyfuck:8730281lkjlkjdqlksalks
+	skyfuck:{secret password}
   </description>
 
 </web-app>
@@ -171,8 +171,8 @@ Cost 1 (s2k-count) is 65536 for all loaded hashes
 Cost 2 (hash algorithm [1:MD5 2:SHA1 3:RIPEMD160 8:SHA256 9:SHA384 10:SHA512 11:SHA224]) is 2 for all loaded hashes
 Cost 3 (cipher algorithm [1:IDEA 2:3DES 3:CAST5 4:Blowfish 7:AES128 8:AES192 9:AES256 10:Twofish 11:Camellia128 12:Camellia192 13:Camellia256]) is 9 for all loaded hashes
 Press 'q' or Ctrl-C to abort, almost any other key for status
-alexandru        (tryhackme)
-1g 0:00:00:00 DONE (2022-02-10 13:39) 6.666g/s 7146p/s 7146c/s 7146C/s alexandru
+{secret password}        (tryhackme)
+1g 0:00:00:00 DONE (2022-02-10 13:39) 6.666g/s 7146p/s 7146c/s 7146C/s {secret password}
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed
 ```
