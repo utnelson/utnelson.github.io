@@ -9,7 +9,7 @@ thumbnail: /assets/img/posts/ghost_title.png
 keywords: ghostcat, thm, box, easy, write-up, walkthrough
 permalink: /blog/write-up-ghostcat/
 ---
-
+Machine: [https://tryhackme.com/room/tomghost](https://tryhackme.com/room/tomghost)
 ## Enumeration
 
 ```console
