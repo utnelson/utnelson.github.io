@@ -37,7 +37,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 12.93 seconds
 ```
 
-Nothing special on the website. So I inspected the `8080/tcp` port with `Apache Jserv (Protocol v1.3)`.  
+Nothing special on the website. So I inspected the `8009/tcp` port with `Apache Jserv (Protocol v1.3)`.  
 
 After a short google session i found a exploit [CVE-2020-1938](https://www.exploit-db.com/exploits/48143).
 
@@ -110,7 +110,7 @@ Result:
 ...
 ```
 
-Nice. we found some creds `skyfuck:8730281lkjlkjdqlksalks`
+Nice. we found some creds `skyfuck:{secret password}`
 ## Foothold
 
 ssh into the machine
