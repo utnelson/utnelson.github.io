@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "THM Write-Up DogCat"
+summary: Write-Up to the TryHackMe Machine DogCat
+author: utnelson
+date: '2022-02-14 11:17:23 +0000'
+category: ['thm','write-up', 'medium']
+thumbnail: /assets/img/posts/dogcat/title.png
+keywords: dogcat, thm, box, easy, write-up, walkthrough, lfi, path, traversal, docker
+permalink: /blog/write-up-dogcat/
+---
+Machine: [https://tryhackme.com/room/dogcat](https://tryhackme.com/room/dogcat)
+
+## Enumeration
+
+```console
+
+```
+
