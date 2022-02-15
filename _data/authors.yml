@@ -1,10 +1,10 @@
 # Add Authors here
 utnelson:
-   name: Nils 
+   name: utnelson 
    username: utnelson
    site: https://utnelson.github.io/#/
    avatar: avatar.png
-   bio: "Hi I am Nils."
+   bio: "Hi I am Nils aka utnelson and author of this post, watch at '<a href=http://utnelson.github.io/about>About</a>' for more information"
    email: ut.kantwood@gmail.com
    social:
       - title: "github"

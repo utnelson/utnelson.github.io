@@ -1,8 +1,8 @@
 ---
-name: Nils
+name: utnelson
 username: utnelson
 bio: "Look at /About for mor infos from myself."
-site: https://sujaykundu.com
+site: https://utnelson.github.io
 avatar: avatar.png
 email: ut.kantwood@gmail.com
 social:
@@ -12,6 +12,6 @@ social:
       url: "https://www.linkedin.com/in/sujaykundu"
     - title: "youtube"
       url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
-    - title: "twitter"
-      url: "https://www.facebook.com/sujay.kundu2"
+    #- title: "twitter"
+    #  url: "https://www.facebook.com/sujay.kundu2"
 ---

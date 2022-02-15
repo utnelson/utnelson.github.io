@@ -5,7 +5,7 @@ summary: Write-Up to the HackTheBox Machine Paper
 author: utnelson
 date: '2022-02-09 10:35:23 +0530'
 category: ['htb','write-up', 'easy']
-thumbnail: \assets\img\posts\paper.PNG
+thumbnail: \assets\img\posts\paper\paper.PNG
 keywords: paper, htb, box, easy, write-up, walkthrough, polkit
 permalink: /blog/write-up-paper/
 ---
@@ -27,7 +27,7 @@ PORT    STATE SERVICE
 ```
 Nothing special so i tried to look at the website.
 
-![image](\assets\img\posts\paper_website.PNG)
+![image](\assets\img\posts\paper\paper_website.PNG)
 
 Gobuster also didn't show anything interesting. So I tried a new tool called `nikto`.
 
@@ -56,7 +56,7 @@ A new `Wordpress` site appears. Version `5.2.3`. Seems to be not Up-To-Date.
 There is a interesting comment:
 
 <div class="text-center">
-    <img src="\assets\img\posts\paper_comment.PNG" class="rounded img-fluid">
+    <img src="\assets\img\posts\paper\paper_comment.PNG" class="rounded img-fluid">
 </div>
 <br/>  
   
@@ -64,7 +64,7 @@ Lets try to look if there is a vulnerability about that...
 
 This sounds good: [wpscan.com 5.2.3](https://wpscan.com/vulnerability/3413b879-785f-4c9f-aa8a-5a4a1d5e0ba2)
 
-![image](\assets\img\posts\vuln.PNG){:class="img-fluid"}
+![image](\paper\assets\img\posts\vuln.PNG){:class="img-fluid"}
 
 According to this we can find a nice looking secret register link. `http://chat.office.paper/register/*************`
 Before you can follow the link add `chat.office.paper` to your host file.
@@ -76,7 +76,7 @@ With an simple added upgoing command `../` we can see the upper directory. So we
 Inside the `/hubot/.env` file are the bots creds.
 
 <div class="text-center">
-    <img src="\assets\img\posts\paper_bot.PNG" class="rounded img-fluid">   
+    <img src="\assets\img\posts\paper\paper_bot.PNG" class="rounded img-fluid">   
 </div>
 <br/>
 

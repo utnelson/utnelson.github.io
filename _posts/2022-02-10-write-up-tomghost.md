@@ -5,7 +5,7 @@ summary: Write-Up to the TryHackMe Machine tomghost
 author: utnelson
 date: '2022-02-10 10:35:23 +0530'
 category: ['thm','write-up', 'easy']
-thumbnail: /assets/img/posts/ghost_title.png
+thumbnail: /assets/img/posts/ghostcat/ghost_title.png
 keywords: ghostcat, thm, box, easy, write-up, walkthrough
 permalink: /blog/write-up-ghostcat/
 ---

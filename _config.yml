@@ -24,7 +24,7 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: avatar.png
+author_logo: \authors\utnelson.png
 author: utnelson
 author_bio: Hi my name is utnelson and i'm a beginner in ethical hacking and have fun with CTF's.
 author_email: "ut.kantwood@gmail.com"
