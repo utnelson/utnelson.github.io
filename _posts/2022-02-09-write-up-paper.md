@@ -64,7 +64,7 @@ Lets try to look if there is a vulnerability about that...
 
 This sounds good: [wpscan.com 5.2.3](https://wpscan.com/vulnerability/3413b879-785f-4c9f-aa8a-5a4a1d5e0ba2)
 
-![image](\paper\assets\img\posts\vuln.PNG){:class="img-fluid"}
+![image](\paper\assets\img\posts\paper\vuln.PNG){:class="img-fluid"}
 
 According to this we can find a nice looking secret register link. `http://chat.office.paper/register/*************`
 Before you can follow the link add `chat.office.paper` to your host file.
